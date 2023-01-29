@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken</title>
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+      
+        /*nav-bar*/
+        
+        #nav {
+    width: 100%;
+    height: 72px;
+    margin: auto;
+    padding: 10px 0px 0px 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #00008B;
+    border: none;
+    margin-top: 76px;
+    position: -webkit-sticky;
+}
+        #nav>div a{
+            text-decoration:none;
+            color:white;
+            font-size:20px;
+            padding-top:100px;
+        
+        }
+        #nav>div a::after{
+            content:" ";
+            width:0;
+            height:3px;
+            background-color:white;
+            display:block;
+            margin:auto;
+        }
+        #nav>div a:hover::after{
+            width:100%;
+            transition: width 0.1s linear;
+        }
+        #nav>div a:hover{
+            color:antiquewhite;
+        }
+        #nav>div a{
+            font-size:20px;
+            font-style:italic;
+        }
+        
+        /*top-section-for-image*/
+        #topicc{
+            width:100%;
+            height:150px;
+            border:0px solid red;
+            margin:auto;
+            background-color:#F5F5F5;
+        }
+        /*chicken-meals-section*/
+        #chicken{
+            width:100%;
+            margin:auto;
+            height:30%;
+            border:0px solid blue;
+            background-color:#F5F5F5;
+            padding-top:100px;
+        }
+        #chicken h1{
+            color:orangered;
+            text-align:center;
+            font-style:italic;
+            font-size:60px;
+
+        }
+        /*main-box-grid*/
+        #chi{
+            width:100%;
+            height:50%;
+            border: 0px solid purple;
+            margin:auto;
+            padding-top:4%;
+            background-color:#F5F5F5;
+        }
+        /*item-box-pic*/
+        .items>div{
+            display:grid;
+            grid-template-columns:repeat(3,5fr);
+border:0px solid black;
+width:100%;
+margin:auto;
+        }
+        .items>div>div{
+            width:80%;
+            border:10px solid white;
+            margin:auto;
+            margin-bottom:60px;
+        }
+        .items img{
+            width:100%;
+        }
+        .items>div h1{text-align:center;
+            font-style:oblique;
+        }
+        .items>div a {
+            color:black;
+            margin-left:38%;
+        
+            
+        }
+        #d{
+            border:10px #F5F5F5;
+        }
+        /*order-now-button-section*/
+        #down{
+            border:0px solid black;
+            height:20%;
+            width:100%;
+            margin:auto;
+            background-color:#F5F5F5;
+            border:0px solid black;
+            display:flex;
+            margin:auto;  
+        }
+        #down>div{
+            
+            height:30%;
+            width:500px;
+            border:0px solid red;
+            
+               
+        }
+        #down>div h1{
+            margin-top:300px;
+            color:orangered;
+            text-align:center;
+            font-style:italic;
+            font-size:45px;
+            margin-bottom:30px;
+        }
+        #down>div h3{
+            text-align:center;
+            font-size:20px;
+        }
+        #down>div>button{
+            margin-left:175px;
+            border-radius:20px;
+            padding-left:20px;
+            padding-right:20px;
+            padding-top:10px;
+            padding-bottom:10px;
+            background-color:#00008B;
+            border:none;
+            margin-top:30px;
+        }
+        #down>div a{
+        text-decoration:none;
+        color:white;
+        font-style:italic;
+        font-size:20px;
+        }
+        #down>div>button:hover{
+            background-color:orangered;
+        }
+        
+        
+        #down>div img{
+            width:300%;
+        }
+       #down>div h3{
+        text-align:center;
+       }
+       @media all and (min-width:451px) and (max-width:750px){
+        .items>div{
+            grid-template-columns:repeat(2,1fr)
+        }
+
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i><img src="./images/yummy plates.jpeg" alt=""></a>
+        <nav class="navbar">
+            <a href="./index.html" class="active">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            
+            <a href="./favourite.html">Favourite</a>
+            <a href="#order">order</a>
+            <a href="./Login.html">LogIn</a>
+            <a href="./Signin.html">SignUp</a>
+
+        </nav>
+        
+    </header>
+    <!--navigation-bar-->
+<div id="nav">
+    <div><a href="./food.html">ALL</a></div>
+        <div><a href="extra.html">EXTRAS</a></div>
+        <div><a href="sides.html">SIDES,DRINKS & SALES</a></div>
+        <div><a href="./streettacos.html">STREET TACOS</a></div>
+        <div><a href="./family.html">FAMILY DINNERS</a></div>
+        <div><a href="./chicken.html">CHICKEN MEALS</a></div>
+        <div><a href="pollo.html">POLLO FIT MENU</a></div>
+        <div><a href="./bowls.html">BOWLS</a></div>
+</div>
+<!--top-pic-section-->
+
+<div id="topicc">
+    <img width="100%" src="https://www.elpolloloco.com/content/img/hero/Tiles_2.png">
+      
+</div>
+<div id="chicken">
+    <h1>CHICKEN MEALS</h1>
+</div>
+<!--main-section-->
+<div id="chi">
+    <!--item grid section-->
+<div class="items">
+    <div>
+    <div><img src="https://www.elpolloloco.com/content/img/menu/2PCBreastWing_M6_2019_761X561.webp">
+        </div>
+    <div><img src="https://www.elpolloloco.com/content/img/menu/3PCBreastWing_M6_2019_761X561.webp">
+    </div>
+    <div>
+        <img src="https://www.elpolloloco.com/content/img/menu/4PCMeal_M6_2019_761X561.webp"></div>
+
+        <div id="d"><h1>2PIECE MEAL</h1>
+        <a href="#">Nutrition Info</a></div>
+    <div id="d"><h1>3PIECE MEAL</h1>
+        <a href="">Nutrition Info</a></div>
+        <div id="d"><h1>4PIECE MEAL</h1>
+            <a href="#">Nutrition Info</a></div>
+        <div><img src="https://www.elpolloloco.com/content/img/menu/ChickenBreast2_M6_2019_761X567.webp"></div>
+    <div><img src="https://www.elpolloloco.com/content/img/menu/ChickenWing2_M6_2019_761X561.webp"></div>
+    <div><img src="https://www.elpolloloco.com/content/img/menu/ChickenThigh2_M6_2019_761X561.webp"></div>
+   <div id="d"><h1>FIRE GRILLED CHICKEN BREAST</h1>
+<a href="#">Nutrition Info</a></div>
+    <div id="d"><h1>FIRE GRILLED CHICKEN WING</h1>
+<a href="#">Nutrition Info</a></div>
+<div id="d"><h1>FIRE GRILLED CHICKEN THIGH</h1>
+    <a href="#">Nutrition Info</a></div>
+</div>
+<div>
+    </div>
+</div>
+</div>
+<!--order-now-button-section-->
+<div id="down">
+        
+    <div><img src="https://www.elpolloloco.com/content/img/order-now_1280.webp"></div>
+    <div>
+    <h1>PERFECT POLLO IS JUST A CLICK AWAY</h1>
+    <h3>Order Online for quick pick up or delivery where</h3>
+    <h3>available</h3>
+        <button><a href="#">ORDER NOW</a></button>
+        </h1>
+    <!--order-now-section-end-->
+</div>
+</div>
+
+
+
+<!-- footer start -->
+<footer id="footer">
+    <div class="container">
+    <hr style="height:0.5px;border-width:0;color:gray;background-color:rgb(32, 28, 28);margin-top: 15px;">
+    <br>
+    <div class="logDiv">
+    <div class="logoFotter">
+    <h4>Download Apps</h4>
+    <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"><img src="https://www.zee5.com/images/play_store.png?ver=2.50.94"></a>
+    <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"><img src="https://www.zee5.com/images/app_store.png?ver=2.50.94"></a>
+    </div>
+    <div class="leftlogo">
+    <h4>Connect with us</h4>
+    <a href="https://www.facebook.com/ZEE5/" class="fb"><i class="fa-brands fa-facebook-square"></i></a>
+    <a href="https://www.instagram.com/zee5/" class="insta"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com/zee5india" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    </div>
+   
+    <div class="row">
+    <div class="footer-col">
+    <h3> Food Details</h3>
+    <div><a href="">Menu</a></div>
+    <div><a href="">Catering</a></div>
+    <div><a href="">Gift Cards</a></div>
+    <div><a href="">Fundraises & Charities</a></div>
+    <div><a href="">Carrers</a></div>
+    </div>
+    <div class="footer-col">
+    <h3>About US</h3>
+    <div><a href="">Franchising</a></div>
+    <div><a href="">Investors</a></div>
+    <div><a href="">Press Release</a></div>
+    <div><a href="">Contach Us</a></div>
+    <div><a href="">Feedback</a></div>
+    </div>
+    <div class="footer-col">
+    <h3>Yummy Plates</h3>
+    <div><a href="">Earn Points with every order,receive a birthday</a></div>
+    <div><a href="">rewards and other valuable offers throughout the</a></div>
+    <div><a href="">years,plus , special app features to order ahead, pay</a></div>
+    <div><a href="">and save your favourites</a></div>
+    <div><a href=""><u>Learn More</u></a></div>
+    </div>
+    
+    </div>
+    <div class="aboutFooter">
+    
+        <p><a href="#">Nutrition Guide</a></p>
+        <p>|</p>
+        
+        <p><a href="#">Terms Of Use</a></p>
+        <p>|</p>
+        
+        <p><a href="#">Privacy Policy</a></p>
+        <p>|</p>
+        <p><a href="#">Coupan policy</a></p>
+        
+        </div>
+    <div class="end">Best viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+
+    Copyright © 2023 Yummy Plates Entertainment Enterprises Ltd. All rights reserved.</div>
+    </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* nav-bar */
+nav {
+
+    width: 100%;
+    height: 5%;
+    border: none;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+    margin-bottom: 10px;
+
+}
+
+nav>div>a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+/* order */
+
+
+#order {
+    border: 0px solid black;
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    background-color: #F5F5F5;
+    border: 0px solid black;
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#order>div {
+
+    height: 100%;
+    width: 100%;
+    border: 0px solid red;
+
+
+}
+
+#order>div h1 {
+    margin-top: 200px;
+
+    color: orangered;
+    text-align: center;
+    font-style: italic;
+    font-size: 45px;
+}
+
+#order>div h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#order>div>button {
+    margin-left: 250px;
+    border-radius: 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(64, 0, 255);
+    border: none;
+}
+
+#order>div a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#order>div>button:hover {
+    background-color: orangered;
+}
+
+#order>div>button {
+    border-radius: 20px;
+}
+
+#order>div img {
+    width: 200%;
+}
+
+#order>div h3 {
+    text-align: center;
+}
+
+
+
+
+/* screenshot image  */
+#image {
+    background-image: url('image.png.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 30%;
+    width: 100%;
+    margin: auto;
+    height: 20%;
+    border: 0px solid blue;
+    background-color: #F5F5F5;
+
+}
+
+/* media query */
+@media all and (min-width:500px) and (max-width:899px){
+    #nav {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+   
+@media all and (min-width:120px) and (max-width:499px){
+    #nav {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
